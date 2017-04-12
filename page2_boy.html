@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>我特意给你写的贺卡，真心的！</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css"><script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+<div style="height:10px;"></div>
+<div id="nielian" class="page page2">
+<div class="xinxiang"> 
+<img class="bgkuang" src="img/page2/bgkuang.gif">
+<img class="myotee" id="hairback" src="img/hair/hair1-1.png">
+<img class="myotee" id="face" src="img/face/face1.png"> 
+<img class="myotee" id="eyebrow" src="img/eyebrow/eyebrow1.png"> 
+<img class="myotee" id="eye" src="img/eye/eye1.png">
+<img class="myotee" id="nose" src="img/nose/nose1.png">
+<img class="myotee" id="mouth" src="img/mouth/mouth1.png">
+<img class="myotee" id="hair" src="img/hair/hair1.png">
+<img class="myotee" id="glass" src="img/0.png">
+<img class="myotee" id="hat" src="img/0.png">
+</div>
+<div class="kind">
+<img id="facekind" class="selected" src="img/page2/kind/facekind.png">
+<img id="hairkind" src="img/page2/kind/hairkind.png">
+<img id="eyebrowkind" src="img/page2/kind/eyebrowkind.png">
+<img id="eyekind" src="img/page2/kind/eyekind.png">
+<img id="nosekind" src="img/page2/kind/nosekind.png">
+<img id="mouthkind" src="img/page2/kind/mouthkind.png">
+<img id="glasskind" src="img/page2/kind/glasskind.png">
+<img id="hatkind" src="img/page2/kind/hatkind.png">
+</div>
+<div>
+<div class="face_chose">
+<div class="chose chosed"><img id="face1" src="img/coin/2-6.png" onclick="changeface(this.id)"></div>
+<div class="chose"><img id="face2" src="img/coin/2-1.png" onclick="changeface(this.id)"></div>
+<div class="chose"><img id="face3" src="img/coin/2-2.png" onclick="changeface(this.id)"></div>
+<div class="chose"><img id="face4" src="img/coin/2-3.png" onclick="changeface(this.id)"></div>
+<div class="chose"><img id="face5" src="img/coin/2-4.png" onclick="changeface(this.id)"></div>
+<div class="chose"><img id="face6" src="img/coin/2-5.png" onclick="changeface(this.id)"></div>
+</div>
+<div class="hair_chose hide">
+<div class="chose chosed"><img id="hair1" src="img/coin/1-1.png" onclick="changehair(this.id)"></div>
+<div class="chose"><img id="hair2" src="img/coin/1-2.png" onclick="changehair(this.id)"></div>
+<div class="chose"><img id="hair3" src="img/coin/1-3.png" onclick="changehair(this.id)"></div>
+<div class="chose"><img id="hair4" src="img/coin/1-4.png" onclick="changehair(this.id)"></div>
+<div class="chose"><img id="hair5" src="img/coin/1-5.png" onclick="changehair(this.id)"></div>
+<div class="chose"><img id="hair6" src="img/coin/1-6.png" onclick="changehair(this.id)"></div>
+</div>
+<div class="eyebrow_chose hide">
+<div class="chose chosed"><img id="eyebrow1" src="img/coin/3-1.png" onclick="changeeyebrow(this.id)"></div>
+<div class="chose"><img id="eyebrow2" src="img/coin/3-2.png" onclick="changeeyebrow(this.id)"></div>
+<div class="chose"><img id="eyebrow3" src="img/coin/3-3.png" onclick="changeeyebrow(this.id)"></div>
+<div class="chose"><img id="eyebrow4" src="img/coin/3-4.png" onclick="changeeyebrow(this.id)"></div>
+<div class="chose"><img id="eyebrow5" src="img/coin/3-5.png" onclick="changeeyebrow(this.id)"></div>
+<div class="chose"><img id="eyebrow6" src="img/coin/3-6.png" onclick="changeeyebrow(this.id)"></div>
+</div>
+<div class="eye_chose hide">
+<div class="chose chosed"><img id="eye1" src="img/coin/4-1.png" onclick="changeeye(this.id)"></div>
+<div class="chose"><img id="eye2" src="img/coin/4-2.png" onclick="changeeye(this.id)"></div>
+<div class="chose"><img id="eye3" src="img/coin/4-3.png" onclick="changeeye(this.id)"></div>
+<div class="chose"><img id="eye4" src="img/coin/4-4.png" onclick="changeeye(this.id)"></div>
+<div class="chose"><img id="eye5" src="img/coin/4-5.png" onclick="changeeye(this.id)"></div>
+<div class="chose"><img id="eye6" src="img/coin/4-6.png" onclick="changeeye(this.id)"></div>
+</div>
+<div class="nose_chose hide">
+<div class="chose chosed"><img id="nose1" src="img/coin/5-1.png" onclick="changenose(this.id)"></div>
+<div class="chose"><img id="nose2" src="img/coin/5-2.png" onclick="changenose(this.id)"></div>
+<div class="chose"><img id="nose3" src="img/coin/5-3.png" onclick="changenose(this.id)"></div>
+<div class="chose"><img id="nose4" src="img/coin/5-4.png" onclick="changenose(this.id)"></div>
+<div class="chose"><img id="nose5" src="img/coin/5-5.png" onclick="changenose(this.id)"></div>
+<div class="chose"><img id="nose6" src="img/coin/5-6.png" onclick="changenose(this.id)"></div>
+</div>
+<div class="mouth_chose hide">
+<div class="chose chosed"><img id="mouth1" src="img/coin/6-6.png" onclick="changemouth(this.id)"></div>
+<div class="chose"><img id="mouth2" src="img/coin/6-1.png" onclick="changemouth(this.id)"></div>
+<div class="chose"><img id="mouth3" src="img/coin/6-2.png" onclick="changemouth(this.id)"></div>
+<div class="chose"><img id="mouth4" src="img/coin/6-3.png" onclick="changemouth(this.id)"></div>
+<div class="chose"><img id="mouth5" src="img/coin/6-4.png" onclick="changemouth(this.id)"></div>
+<div class="chose"><img id="mouth6" src="img/coin/6-5.png" onclick="changemouth(this.id)"></div>
+</div>
+<div class="glass_chose hide">
+<div class="chose chosed"><img id="glass1" src="img/coin/0-1.png" onclick="changeglass(this.id)"></div>
+<div class="chose"><img id="glass2" src="img/coin/7-1.png" onclick="changeglass(this.id)"></div>
+<div class="chose"><img id="glass3" src="img/coin/7-2.png" onclick="changeglass(this.id)"></div>
+<div class="chose"><img id="glass4" src="img/coin/7-3.png" onclick="changeglass(this.id)"></div>
+<div class="chose"><img id="glass5" src="img/coin/7-4.png" onclick="changeglass(this.id)"></div>
+<div class="chose"><img id="glass6" src="img/coin/7-5.png" onclick="changeglass(this.id)"></div>
+</div>
+<div class="hat_chose hide">
+<div class="chose chosed"><img id="hat1" src="img/coin/0-1.png" onclick="changehat(this.id)"></div>
+<div class="chose"><img id="hat2" src="img/coin/8-5.png" onclick="changehat(this.id)"></div>
+<div class="chose"><img id="hat3" src="img/coin/8-1.png" onclick="changehat(this.id)"></div>
+<div class="chose"><img id="hat4" src="img/coin/8-2.png" onclick="changehat(this.id)"></div>
+<div class="chose"><img id="hat5" src="img/coin/8-3.png" onclick="changehat(this.id)"></div>
+<div class="chose"><img id="hat6" src="img/coin/8-4.png" onclick="changehat(this.id)"></div>
+</div>
+</div>
+<div class="zero"></div>
+<div class="choseok" onClick="nextstep()">确认选择</div>
+ </div>
+<script src="js/index.js"></script> 
+<script>
+
+
+
+
+
+ face="1"; hair="1"; eyebrow="1"; eye="1"; nose="1"; mouth="1";glass="1"; hat="1";
+ function nextstep(){
+	var lujin="page3.html?sex=b"+"?fa="+face+"&eyb="+eyebrow+"&ey="+eye+"&no="+nose+"&mo="+mouth+"&hr="+hair+"&gl="+glass+"&ht="+hat;
+ location.href=lujin;
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>我特意给你写的贺卡，真心的！</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script >
+var url = window.location.search;
+url=decodeURI(url);
+var arr=url.split('?fa=');
+var face=arr[1].split('&eyb=');
+var eyebrow=face[1].split('&ey=');
+var eye=eyebrow[1].split('&no=');
+var nose=eye[1].split('&mo=');
+var mouth=nose[1].split('&hr=');
+var hair=mouth[1].split('&gl=');
+var glass=hair[1].split('&ht=');
+var hat=glass[1];
+var facekind="img/face/face"+face[0]+".png";
+var eyebrowkind="img/eyebrow/eyebrow"+eyebrow[0]+".png";
+var eyekind="img/eye/eye"+eye[0]+".png";
+var nosekind="img/nose/nose"+nose[0]+".png";
+var mouthkind="img/mouth/mouth"+mouth[0]+".png";
+var hairkind="img/hair/hair"+hair[0]+".png";
+var hairbackkind="img/hair/hair"+hair[0]+"-1.png";
+var glasskind="img/glass/glass"+glass[0]+".png";
+var hatkind="img/hat/hat"+hat[0]+".png";
+function window_onload() {
+	if(facekind){
+ var element = document.getElementById('face');
+ element.src = facekind;
+	}
+		if(eyebrowkind){
+ var element = document.getElementById('eyebrow');
+ element.src = eyebrowkind;
+	}
+		if(eyekind){
+ var element = document.getElementById('eye');
+ element.src = eyekind;
+	}
+		if(nosekind){
+ var element = document.getElementById('nose');
+ element.src = nosekind;
+	}
+		if(mouthkind){
+ var element = document.getElementById('mouth');
+ element.src = mouthkind;
+	}
+		if(hairkind){
+ var element = document.getElementById('hair');
+ element.src = hairkind;
+	}
+	if(hairbackkind){
+ var element = document.getElementById('hairback');
+ element.src = hairbackkind;
+	}
+		if(glasskind){
+ var element = document.getElementById('glass');
+ element.src = glasskind;
+	}
+		if(hatkind){
+ var element = document.getElementById('hat');
+ element.src = hatkind;
+	}
+ }
+</script>
+</head>
+<body onload="window_onload();">
+<div id="xingming" class="page page3">
+<img class="logo2016 animate-zoomInDown" src="img/page3/2016.png"> 
+<div class="xinxiang"> 
+<img class="myotee" id="hairback" src="img/0.png">
+<img class="myotee" id="face" src="img/face/face1.png"> 
+<img class="myotee" id="eyebrow" src="img/0.png"> 
+<img class="myotee" id="eye" src="img/0.png">
+<img class="myotee" id="nose" src="img/0.png">
+<img class="myotee" id="mouth" src="img/0.png">
+<img class="myotee" id="hair" src="img/0.png">
+<img class="myotee" id="glass" src="img/0.png">
+<img class="myotee" id="hat" src="img/0.png">
+</div>
+<div class="inputname animate-fadeInDown">
+<div><input type="text" class="yourname" id="yourname" placeholder="您的姓名"></div>
+<div><input type="text" class="hisname" id="hisname" placeholder="被祝福者姓名"></div>
+<div class="choseok animate-fadeInUp" onClick="nextstep()">确认选择</div>
+<img class="monkey animate-fadeInRight"  onClick="nextstep()" src="img/monkey.gif">
+</div>
+</div>
+<script src="js/index.js"></script> 
+<script>
+ function nextstep(){
+	 if(document.getElementById('yourname').value)
+	{var lujin="page4.html"+url+"&na="+document.getElementById('yourname').value;}
+	else
+	{var lujin="page4.html"+url+"&na="+"大尚国际";}
+	if(document.getElementById('hisname').value)
+	{var lujin=lujin+"&hn="+document.getElementById('hisname').value;}
+	else
+	{var lujin=lujin+"&hn="+"各位亲友";}
+ location.href=lujin;
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+<meta http-equiv="Content-Type">
+<meta content="text/html; charset=utf-8">
+<meta charset="utf-8">
+<title>我特意给你写的贺卡，真心的！</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<script src="js/jquery-1.11.1.min.js"></script>
+<script >
+var url = window.location.search;
+</script>
+</head>
+<body>
+<div id="xingming" class="page page4">
+<img class="logo2016 animate-zoomInDown" src="img/page3/2016.png"> 
+<div class="title">请选择您的祝福语</div>
+<div class="inputyourword">
+<div class="wordchose">
+<textarea disabled="disabled" class="yourword selected" id="selected" rows="2" cols="20">愿你每天像猴子般精灵，身手敏捷,做任何事情，都要猴精猴精的！
+</textarea>
+</div>
+<div class="wordchose">
+<textarea disabled="disabled" class="yourword" id="" rows="2" cols="20">猴年马月发财？可能就是现在哦？祝你财源通畅，恭喜发财！</textarea>
+</div>
+<div class="wordchose">
+<textarea disabled="disabled" class="yourword" id="" rows="2" cols="20">
+听说你才思敏捷，诡计多端，有勇有谋。好吧，看你72变！
+</textarea>
+</div>
+<div class="wordchose">
+<textarea disabled="disabled" class="yourword" id="" rows="2" cols="20">大圣挥舞金箍棒，为你扫平障碍，消除万难，一路前行！</textarea>
+</div>
+<div class="wordchose">
+<textarea disabled="disabled" class="yourword" id="" rows="2" cols="20">
+兄弟，常回来转转。别忘了花果山里还有一群重情重义的小兄弟。
+</textarea>
+</div>
+<div class="wordchose">
+<textarea class="yourword" id="" rows="3" cols="20" placeholder="自定义祝福语(40字以内)"  maxlength="40"></textarea>
+</div>
+</div>
+<div class="choseok" onClick="nextstep()">确认选择</div>
+</div>
+<script src="js/index.js"></script> 
+<script>
+    $(function(){
+	$('.inputyourword .wordchose').click(function(){
+		$('.inputyourword textarea').removeClass("selected");
+		$('.inputyourword textarea').attr('id','choseword');
+		$(this).children().addClass("selected"); 
+		$(this).children().attr('id','selected');
+		});
+	});
+	
+ function nextstep(){
+
+var lujin="page5.html"+url+"&wo="+document.getElementById('selected').value+"&end";
+
+ location.href=lujin;
+ }
+</script>
+</body>
+</html>
